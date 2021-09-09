@@ -32,6 +32,7 @@ namespace RymesTest
                 new dog()
             };
             // question Two
+            //Take a copy of one of your solutions and extend it to include another 10 animals. 
             List<Animals> _Animal10 = new List<Animals>() {
                 new Animals(){Name = "Eagle",Sound ="screech"},
                 new Animals(){Name = "Elephant",Sound ="trumpet"},
@@ -60,6 +61,10 @@ namespace RymesTest
             string UserAnimalName = Console.ReadLine();
             Console.WriteLine("Now type-in the sound the above animal Makes");
             string UserAnimalSound = Console.ReadLine();
+            // Note the blow code is going to print same result
+            //var UserAnimal = new cow() { Name = UserAnimalName, Sound = UserAnimalSound };
+            //List<cow> Animals = new List<cow>();
+
             var UserAnimal = new Animals(UserAnimalName, UserAnimalSound);
             List<Animals> Animals = new List<Animals>();
             Animals.Add(UserAnimal);

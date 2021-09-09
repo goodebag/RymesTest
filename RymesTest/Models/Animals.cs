@@ -6,8 +6,8 @@ namespace RymesTest.Models
 {
     public class Animals
     {
-        public string Name { get; set; }
-        public string Sound { get; set; }
+        public string Name { get; set; } = "No-Name";
+        public string Sound { get; set; } = "No-Sound";
         public Animals()
         {
 
