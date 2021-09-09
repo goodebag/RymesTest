@@ -17,7 +17,7 @@ namespace RymesTest.Models
             this.Name = name;
             this.Sound = sound;
         }
-        public string MakeSound()
+        public virtual string  MakeSound()
         {
             return Sound;
         }

@@ -24,6 +24,8 @@ namespace RymesTest
             };
 
             // Solution Two
+           // Polymorphism refers to changing the behavior of a super class in the subclass
+           //which in this case  is the MakeSound() method
             List<Animals> _Animal = new List<Animals>() {
                 new cow(),
                 new ducks(),
@@ -83,16 +85,16 @@ namespace RymesTest
                 {
                     if (i > 1)
                     {
-                        poem.SecondLine = poem.SecondLine.Replace(LastAnimalName, animal.Name);
-                        poem.ThirdLine = poem.ThirdLine.Replace(LastAnimalSound, animal.Sound);
-                        poem.FourthLine = poem.FourthLine.Replace(LastAnimalSound, animal.Sound);
+                        poem.SecondLine = poem.SecondLine.Replace(LastAnimalName, animal.MakeSound());
+                        poem.ThirdLine = poem.ThirdLine.Replace(LastAnimalSound, animal.MakeSound());
+                        poem.FourthLine = poem.FourthLine.Replace(LastAnimalSound, animal.MakeSound());
 
                     }
                     else
                     {
-                        poem.SecondLine = poem.SecondLine.Replace("cow", animal.Name);
-                        poem.ThirdLine = poem.ThirdLine.Replace("moo", animal.Sound);
-                        poem.FourthLine = poem.FourthLine.Replace("moo", animal.Sound);
+                        poem.SecondLine = poem.SecondLine.Replace("cow", animal.MakeSound());
+                        poem.ThirdLine = poem.ThirdLine.Replace("moo", animal.MakeSound());
+                        poem.FourthLine = poem.FourthLine.Replace("moo", animal.MakeSound());
                     }
                     LastAnimalName = animal.Name;
                     LastAnimalSound = animal.Sound;

@@ -11,6 +11,7 @@ namespace RymesTest.Models
             this.Name = "Cow";
             this.Sound = "Moo";
         }
+        public override string MakeSound() { return "Moo"; }
     }
     public class ducks : Animals
     {
@@ -19,6 +20,7 @@ namespace RymesTest.Models
             this.Name = "ducks";
             this.Sound = "quack";
         }
+        public override string MakeSound() { return "quack"; }
     }
     public class cat : Animals
     {
@@ -27,6 +29,7 @@ namespace RymesTest.Models
             this.Name = "cat";
             this.Sound = "meow";
         }
+        public override string MakeSound() { return "meow"; }
     }
     public class goat : Animals
     {
@@ -35,6 +38,7 @@ namespace RymesTest.Models
             this.Name = "goat";
             this.Sound = "bleat";
         }
+        public override string MakeSound() { return "bleat"; }
     }
     public class dog : Animals
     {
@@ -43,5 +47,6 @@ namespace RymesTest.Models
             this.Name = "dog";
             this.Sound = "bark";
         }
+        public override string MakeSound() { return "bark"; }
     }
 }
